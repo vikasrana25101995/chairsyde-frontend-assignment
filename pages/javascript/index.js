@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 function addMultipleCards() {
   let card = document.querySelector(".Card__Section");
-  for (let index = 0; index < 8; index++) {
+  for (let index = 0; index < 11; index++) {
     let cloneCard = card.cloneNode(true);
     document.querySelector(".Cards__Section").appendChild(cloneCard);
   }

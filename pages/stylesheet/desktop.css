@@ -3,6 +3,7 @@
   border-radius: 4px;
   color: #FC5E64;
   padding: 8px 16px;
+  background-color: transparent;
 }
 
 .SecondaryButton, .Card__SendButton {
