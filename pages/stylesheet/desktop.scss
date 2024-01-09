@@ -1,0 +1,204 @@
+@use "../../common/common" as *;
+@use "../../common/abstracts/functions" as *;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family:"Basier Circle";
+  background-color: #0D101B;
+}
+
+.HomePage {
+  margin: auto;
+  max-width: clamp(0px, #{convert_px_to_vw(1440)}vw, 1440px);
+  padding: 48px 36px 56px 50px;
+}
+
+.Card {
+  &__ButtonSection {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  &__FormSide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__Heading {
+    color: #E2E2E2;
+
+    &__DropdownOuterSection {
+      position: relative;
+      cursor: pointer;
+    }
+
+    &__DropdownSection {
+      @extend .DropdownSection;
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      font-weight: 400;
+      gap: 16px;
+      padding: 16px;
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      width: max-content;
+      & li {
+        list-style-type: none;
+        display: flex;
+        gap: 8px;
+      }
+
+      &.Hide {
+        display: none;
+      }
+    }
+  }
+
+  &__HeadingSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    & i {
+      color: #E2E2E2;
+    }
+  }
+
+  &__ImageSide
+  {
+    & img{
+      border-radius: 20px;
+    }
+  }
+
+  &__InputSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    & input {
+      border: 0px;
+      background: transparent;
+      border-bottom: 1px solid #e6e6e60f;
+      padding-bottom: 8px;
+      outline: none;
+    }
+  }
+
+  &__PreviewButton {
+    @extend .PrimaryButton;
+    outline: none;
+    width: 109px;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  &__SendButton {
+    @extend .SecondaryButton;
+    outline: none;
+    width: 107px;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  &__Section {
+    background: rgb(33, 39, 46);
+    border-radius: 12px;
+    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex: 1 1 auto;
+    gap: 12px;
+    padding: 12px;
+    width: max-content;
+  }
+}
+
+.Cards {
+  &__Section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+  }
+}
+
+.Header {
+  &__CreateButton {
+    @extend .PrimaryButton;
+    background: transparent;
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__Heading {
+    color: #E2E2E2;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  &__Search {
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #4A516D;
+    color: #E2E2E2;
+    width: 322px;
+    height: 36px;
+    padding: 6px 12px;
+    outline: none;
+  }
+
+  &__SearchSection {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  &__Section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__SortBySection {
+    color: #E2E2E2;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__SortByDropdown {
+    @extend .DropdownSection;
+    display: flex;
+    flex-direction: column;
+    font-size: 9px;
+    font-weight: 400;
+    gap: 4px;
+    padding: 8px 14px 12px 8px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    width: max-content;
+    z-index: 1;
+
+    &.Hide {
+      display: none;
+    }
+
+    & li {
+      list-style-type: none;
+    }
+  }
+}

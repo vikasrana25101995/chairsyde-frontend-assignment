@@ -1,0 +1,21 @@
+.Card {
+  &__ImageSide {
+    width: 100%;
+
+    & img {
+      height: 149px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__Section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.HomePage
+{
+  padding: 50px 20px 20px 20px;
+}

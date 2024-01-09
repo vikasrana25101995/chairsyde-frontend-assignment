@@ -1,0 +1,17 @@
+.Card__ImageSide {
+  width: 100%;
+}
+.Card__ImageSide img {
+  height: 149px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Card__Section {
+  display: flex;
+  flex-direction: column;
+}
+
+.HomePage {
+  padding: 50px 20px 20px 20px;
+}/*# sourceMappingURL=tablet.css.map */

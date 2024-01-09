@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet/index.css" />
+    <script src="./javascript/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9773043ce7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="HomePage">
+      <header class="Header__Section">
+        <div class="Header__Heading">Heading</div>
+        <div class="Header__SearchSection">
+          <input class="Header__Search" placeholder="Search" />
+          <div class="Header__SortBySection ">
+            <div>
+              <span>Sort By</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="Header__SortByDropdown Hide">
+              <li>Show newest first</li>
+              <li>Show oldest first</li>
+              <li>Show name A to Z</li>
+              <li>Show name Z to A</li>
+            </div>
+          </div>
+        </div>
+        <div class="Header__CreateSection">
+          <button class="Header__CreateButton"><span>+</span>Create</button>
+        </div>
+      </header>
+
+      <div class="Cards__Section">
+        <div class="Card__Section">
+          <div class="Card__ImageSide">
+            <img alt="card image" src="../assets/silverfilling 3.jpg" />
+          </div>
+          <div class="Card__FormSide">
+            <div class="Card__HeadingSection">
+              <h3 class="Card__Heading">Lorem ipsum</h3>
+              <div class="Card__Heading__DropdownOuterSection">
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="Card__Heading__DropdownSection Hide">
+                  <li>
+                    <i class="fa-solid fa-folder"></i>
+                    <span>Manage</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-pen"></i> 
+                    <span>Rename</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-trash-can"></i>
+                    <span>Delete</span>
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="Card__InputSection">
+              <input placeholder="Lorem Iipsum" />
+              <input placeholder="Lorem Iipsum" />
+              <input placeholder="Lorem Iipsum" />
+            </div>
+            <div class="Card__ButtonSection">
+              <button class="Card__PreviewButton">Preview</button>
+              <button class="Card__SendButton">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

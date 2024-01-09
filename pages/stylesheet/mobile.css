@@ -1,0 +1,41 @@
+.Header__Section {
+  display: grid;
+  grid-template-areas: "grid-area-heading grid-area-createSection " "grid-area-searchSection grid-area-searchSection";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr max-content;
+  row-gap: 25px;
+}
+
+.Header__Heading {
+  grid-area: grid-area-heading;
+}
+.Header__SearchSection {
+  grid-area: grid-area-searchSection;
+}
+.Header__CreateSection {
+  grid-area: grid-area-createSection;
+}
+.Header__Search {
+  max-width: 233px;
+}
+
+.HomePage {
+  padding: 20px;
+}
+
+.Card__ButtonSection {
+  flex-direction: column;
+}
+.Card__Section {
+  flex-direction: column;
+  width: -webkit-fill-available;
+}
+.Card__ImageSide img {
+  width: 100%;
+}
+.Card__InputSection input {
+  width: 100%;
+}
+.Card__PreviewButton, .Card__SendButton {
+  width: 100%;
+}/*# sourceMappingURL=mobile.css.map */

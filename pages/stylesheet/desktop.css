@@ -1,0 +1,191 @@
+.PrimaryButton, .Card__PreviewButton, .Header__CreateButton {
+  border: 1px solid #FC5E64;
+  border-radius: 4px;
+  color: #FC5E64;
+  padding: 8px 16px;
+}
+
+.SecondaryButton, .Card__SendButton {
+  background: #FC5E64;
+  border: 1px solid #FC5E64;
+  border-radius: 4px;
+  color: #000000;
+  padding: 8px 16px;
+}
+
+.DropdownSection, .Card__Heading__DropdownSection, .Header__SortByDropdown {
+  border-radius: 5px;
+  border: 0.5px solid rgba(255, 255, 255, 0.35);
+  background: #0B121C;
+  color: #C3C9D0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Basier Circle";
+  background-color: #0D101B;
+}
+
+.HomePage {
+  margin: auto;
+  max-width: clamp(0px, 100vw, 1440px);
+  padding: 48px 36px 56px 50px;
+}
+
+.Card__ButtonSection {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+.Card__FormSide {
+  display: flex;
+  flex-direction: column;
+}
+.Card__Heading {
+  color: #E2E2E2;
+}
+.Card__Heading__DropdownOuterSection {
+  position: relative;
+  cursor: pointer;
+}
+.Card__Heading__DropdownSection {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 16px;
+  padding: 16px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.Card__Heading__DropdownSection li {
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+}
+.Card__Heading__DropdownSection.Hide {
+  display: none;
+}
+.Card__HeadingSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.Card__HeadingSection i {
+  color: #E2E2E2;
+}
+.Card__ImageSide img {
+  border-radius: 20px;
+}
+.Card__InputSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.Card__InputSection input {
+  border: 0px;
+  background: transparent;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.0588235294);
+  padding-bottom: 8px;
+  outline: none;
+}
+.Card__PreviewButton {
+  outline: none;
+  width: 109px;
+  font-weight: 600;
+  flex: 1;
+}
+.Card__SendButton {
+  outline: none;
+  width: 107px;
+  font-weight: 600;
+  flex: 1;
+}
+.Card__Section {
+  background: rgb(33, 39, 46);
+  border-radius: 12px;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex: 1 1 auto;
+  gap: 12px;
+  padding: 12px;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.Cards__Section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+
+.Header__CreateButton {
+  background: transparent;
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.Header__Heading {
+  color: #E2E2E2;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+}
+.Header__Search {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #4A516D;
+  color: #E2E2E2;
+  width: 322px;
+  height: 36px;
+  padding: 6px 12px;
+  outline: none;
+}
+.Header__SearchSection {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+.Header__Section {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.Header__SortBySection {
+  color: #E2E2E2;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+.Header__SortByDropdown {
+  display: flex;
+  flex-direction: column;
+  font-size: 9px;
+  font-weight: 400;
+  gap: 4px;
+  padding: 8px 14px 12px 8px;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 1;
+}
+.Header__SortByDropdown.Hide {
+  display: none;
+}
+.Header__SortByDropdown li {
+  list-style-type: none;
+}/*# sourceMappingURL=desktop.css.map */

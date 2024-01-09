@@ -1,0 +1,7 @@
+@use './variables.scss' as *;
+
+@function convert_px_to_vw($value)
+{
+  $convesion: ( (100/$max-screen-size) * $value );
+  @return $convesion;
+}
